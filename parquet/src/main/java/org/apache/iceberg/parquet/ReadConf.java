@@ -205,7 +205,7 @@ class ReadConf<T> {
       return offsetToStartPos;
 
     } catch (IOException e) {
-      throw new UncheckedIOException("Failed to create/close reader for file: " + file, e);
+      throw new UncheckedIOException("Failed to create/close reader for file: " + file.location(), e);
     }
   }
 
